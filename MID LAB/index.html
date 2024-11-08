@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineering Student Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <h1 class="display-4">Hafiz Muhammad Shamus Ul Huda</h1>
+            <nav class="navbar navbar-expand-lg bg-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    
+        <!-- Content will be added here -->
+        <main>
+            <div class="container">
+                <h2 class="mb-4">Projects</h2>
+                
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card h-100 project-card" data-id="1">
+                            <img src="Images/project1.jpg.jpeg" alt="Project 1" class="project-image">
+                            <div class="card-body">
+                                <h5 class="card-title">Bus Ticket System</h5>
+                                <p class="card-text">The Bus Ticket Booking System is a user-friendly web or desktop application designed to automate and streamline the process of purchasing bus tickets. The system allows users to search for available bus routes, book seats, and pay for tickets online, ensuring convenience for travelers and efficient management for bus operators.</p>
+                                <button class="btn btn-primary" onclick="showProjectDescription(1)">Show Description</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card h-100 project-card" data-id="1">
+                            <img src="Images/employee ms.jpeg" alt="Project 2" class="project-image">
+                            <div class="card-body">
+                                <h5 class="card-title">Employee Management System</h5>
+                                <p class="card-text"> The Employee Management System is a comprehensive tool designed to streamline HR processes within an organization. It allows HR managers and administrators to manage employee records, track performance, and handle payroll, leave, and attendance efficiently. This system enhances operational efficiency by automating tasks that traditionally require manual input, providing easy access to employee data, and generating insightful reports.</p>
+                                <button class="btn btn-primary" onclick="showProjectDescription(1)">Show Description</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 project-card" data-id="1">
+                            <img src="Images/shop.jpeg" alt="Project 3" class="project-image">
+                            <div class="card-body">
+                                <h5 class="card-title">Shoping Management System</h5>
+                                <p class="card-text"> The Shopping Management System is a robust, all-in-one platform designed to manage retail operations and online shopping experiences. It caters to both customers and store administrators, providing a seamless process for browsing products, placing orders, handling inventory, and managing payments. The system is designed to automate core functions such as product management, customer orders, and sales reports, making shopping more efficient and reducing manual errors in inventory and transaction handling.</p>
+                                <button class="btn btn-primary" onclick="showProjectDescription(1)">Show Description</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 project-card" data-id="1">
+                            <img src="Images/employee ms.jpeg" alt="Project 4" class="project-image">
+                            <div class="card-body">
+                                <h5 class="card-title">FIR Management System</h5>
+                                <p class="card-text">  The Fire Management System is designed to support fire departments and emergency services in managing incidents, resources, and personnel more efficiently. The system automates key processes such as fire incident reporting, resource allocation, equipment tracking, and personnel management, ensuring a quicker response time and effective coordination during emergencies. This system enhances operational efficiency and decision-making for fire departments and other emergency responders.</p>
+                                <button class="btn btn-primary" onclick="showProjectDescription(1)">Show Description</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat for each project -->
+                </div>
+            </div>
+
+            <section class="my-expertise-section bg-light py-5">
+                <h2 class="mb-4">My Expertise</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <h3>Technical Skills</h3>
+                            <ul class="list-unstyled">
+                                <!-- Add your technical skills here -->
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                                <li>Bootstrap</li>
+                                <li>React</li>
+                                <li>Node.js</li>
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>SQL</li>
+                                <li>Git</li>
+                                <li>Version Control</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <h3>Personal Skills</h3>
+                            <ul class="list-unstyled">
+                                <!-- Add your personal skills here -->
+                                <li>Problem-solving</li>
+                                <li>Teamwork</li>
+                                <li>Communication</li>
+                                <li>Time Management</li>
+                                <li>Adaptability</li>
+                                <li>Creativity</li>
+                                <li>Attention to Detail</li>
+                                <li>Leadership</li>
+                                <li>Patience</li>
+                                <li>Curiosity</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            
+        </main>
+        
+        <!-- Modal for displaying project descriptions -->
+        <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModalLabel">Project Description</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="modal-body">
+                        <!-- Project description will be loaded here -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+    
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container">
+            <p>&copy; 2024 Software Engineering Student Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+.form-control:focus {
+    border-color: #1db8b8;
+    box-shadow: 0 0 0 0.25rem rgba(29, 114, 184, 0.25);
+}
+
+.btn-submit {
+    background-color: #98c2e4;
+    color: #fff;
+}
+
+.btn-submit:hover {
+    background-color: #322674;
+}
+
+.card {
+    border: 2px solid #112d44;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    background-color: #f1f3f5;
+}
+
+.card-title {
+    color: #22cfc1;
+}
+
+.is-invalid {
+    border: 2px solid #a70f1c;
+}
+
+.is-valid {
+    border-color: #2a9d8f;
+}

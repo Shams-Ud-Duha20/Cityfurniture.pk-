@@ -1,0 +1,9 @@
+Key Features:
+
+Incident Reporting and Dispatching: Fire incidents can be reported in real-time through a web portal or mobile app. The system dispatches the nearest available fire stations and resources based on the incident location.
+Resource Management: Tracks the availability and status of fire trucks, ambulances, and firefighting equipment in real-time. Ensures that the right resources are allocated to the correct location swiftly.
+Personnel Management: Manages firefighter rosters, tracks personnel availability, and assigns staff to incidents. The system can also handle certifications, training schedules, and shift rotations.
+Emergency Response Mapping: Provides an integrated map with real-time GPS tracking of fire vehicles and resources, offering situational awareness for dispatchers and field teams.
+Equipment Tracking & Maintenance: Keeps records of fire equipment, including usage history, maintenance schedules, and status. Alerts for routine maintenance and replacement of critical equipment such as fire hoses, extinguishers, and breathing apparatus.
+Communication System: Facilitates direct communication between fire department personnel, field units, and dispatchers through an integrated messaging system, reducing response time and improving coordination.
+Incident Analysis and Reporting: Generates detailed reports on fire incidents, response times, resource usage, and personnel involved. The reports can be analyzed to improve future emergency response strategies.

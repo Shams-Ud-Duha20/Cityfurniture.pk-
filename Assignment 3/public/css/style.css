@@ -1,0 +1,96 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+h1{
+    color: azure;
+}
+
+ h2, h3, h4, h5, h6 {
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    padding-top: 40px;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff6600;
+}
+
+/* Main Content Styles */
+main {
+    padding: 50px 0;
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.my-expertise-section {
+    padding-top: 40px;
+}
+
+.my-expertise-section h2 {
+    color: #333;
+}
+
+.my-expertise-section ul {
+    padding-left: 20px;
+}
+
+.my-expertise-section li {
+    margin-bottom: 5px;
+}
+

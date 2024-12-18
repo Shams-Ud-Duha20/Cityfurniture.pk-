@@ -18,6 +18,7 @@ app.use(session({
     saveUninitialized: false,
 }));
 
+let productModel = require("./models/products.model");
 
 let ProductsTable = require("./Routes/adminRoutes/products.controller");
 app.use(ProductsTable);
@@ -41,7 +42,7 @@ app.get("/",  (req, res) => {
         return res.redirect("/login");
     }
     console.log("Session is found(login-route) : ");
-    return res.render("Home" , {title : "Layers Bakeshop"});
+    return res.render("Home" , {title : "City Furniture"});
 });
 
 app.get("/contact" ,(req, res) => {
@@ -74,6 +75,21 @@ app.get("/add-to-cart/:id", (req, res) => {
     cart.push(req.params.id);
     res.cookie("cart", cart);
     res.redirect("/admin");
+});
+
+app.get("/ViewCart/Checkout", async (req, res) => {
+    let cart = req.cookies.cart || [];
+    
+    // Fetch products from the database that match the cart IDs
+    let products = await productModel.find({ 
+        _id: { $in: cart } 
+    }).sort({ createdAt: -1 }); // Sort products by descending date (most recent first)
+
+    res.render("admins_ejs_files/Checkout", { 
+        layout: "AdminParent",
+        products, 
+        title: "Checkout" 
+    });
 });
 
 

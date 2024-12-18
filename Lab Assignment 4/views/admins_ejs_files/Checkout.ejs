@@ -1,0 +1,44 @@
+<h1>Checkout</h1>
+<% if (products.length > 0) { %>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Date Added</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% products.forEach(product => { %>
+                <tr>
+                    <td><%= product.title %></td>
+                    <td><%= product.description %></td>
+                    <td><%= product.price %></td>
+                    <td><%= product.createdAt.toLocaleString() %></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+    <button id="placeOrderButton">Place Order</button>
+    <form id="checkoutForm" method="POST" action="/ViewCart/Checkout/placeOrder" style="display: none;">
+        <h3>Delivery Information</h3>
+        <label>Name:</label>
+        <input type="text" name="name" required />
+        <label>Street:</label>
+        <input type="text" name="street" required />
+        <label>City:</label>
+        <input type="text" name="city" required />
+        <label>Postal Code:</label>
+        <input type="text" name="postalCode" required />
+        <input type="hidden" name="cart" value="<%= JSON.stringify(products) %>" />
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        document.getElementById("placeOrderButton").addEventListener("click", () => {
+            document.getElementById("checkoutForm").style.display = "block";
+        });
+    </script>
+<% } else { %>
+    <p>Your cart is empty.</p>
+<% } %>

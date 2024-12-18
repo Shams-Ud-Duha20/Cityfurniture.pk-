@@ -6,7 +6,7 @@ router.get("/admin/products", async (req, res) => {
     let products = await Product.find();
     return res.render("admin/products", {
       layout: "adminlayout",
-      pageTitle: "Manage Shan Foods",
+      pageTitle: "City Furniture",
       products,
     });
   });

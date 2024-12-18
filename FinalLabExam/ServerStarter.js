@@ -76,6 +76,20 @@ app.get("/add-to-cart/:id", (req, res) => {
     res.redirect("/admin");
 });
 
+app.get("/ViewCart/Checkout", async (req, res) => {
+    let cart = req.cookies.cart || [];
+    
+    // Fetch products from the database that match the cart IDs
+    let products = await productModel.find({ 
+        _id: { $in: cart } 
+    }).sort({ createdAt: -1 }); // Sort products by descending date (most recent first)
+
+    res.render("admins_ejs_files/Checkout", { 
+        layout: "AdminParent",
+        products, 
+        title: "Checkout" 
+    });
+});
 
 
 

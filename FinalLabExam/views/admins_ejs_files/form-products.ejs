@@ -1,24 +1,57 @@
 <h4>Create Product</h4>
-<p>If we do not give action attribute then the form is submitted to the url on which it was rendered</p>
+<p>If we do not give an action attribute, the form is submitted to the URL on which it was rendered.</p>
 
 <form action="" method="post">
-    <div class="form-group">
-        <label for="titleInput">Title</label>
-        <input name="title" type="text" class="form-control" id="titleInput" aria-describedby="emailHelp" placeholder="Enter Title" value="IPhone" />
-        <small id="emailHelp" class="form-text text-muted">Product Title</small>
-      </div>
-      <div class="form-group">
-        <label for="descriptionInput">Description</label>
-        <textarea name="description" type="text" class="form-control" id="descriptionInput" aria-describedby="emailHelp" placeholder="Enter Description">IPhone is Awesome </textarea>
-        <small id="emailHelp" class="form-text text-muted">Product Details</small>
-      </div>
-      <div class="form-group">
-        <label for="priceInput">Price</label>
-        <input name="price" type="text" class="form-control" id="priceInput" aria-describedby="emailHelp" placeholder="Enter Price" value="8000">
-        <small id="emailHelp" class="form-text text-muted">Product Price in PKR</small>
-      </div>
-      <div class="form-group">
-        <button class="btn btn-info">Create New Product</button>
-      </div>
+  <div class="form-group">
+    <label for="titleInput">Title</label>
+    <input
+      name="title"
+      type="text"
+      class="form-control"
+      id="titleInput"
+      placeholder="Enter Title"
+      value="IPhone"
+    />
+    <small id="titleHelp" class="form-text text-muted">Product Title</small>
+  </div>
 
+  <div class="form-group">
+    <label for="descriptionInput">Description</label>
+    <textarea
+      name="description"
+      class="form-control"
+      id="descriptionInput"
+      placeholder="Enter Description"
+    >IPhone is Awesome</textarea>
+    <small id="descriptionHelp" class="form-text text-muted">Product Details</small>
+  </div>
+
+  <div class="form-group">
+    <label for="priceInput">Price</label>
+    <input
+      name="price"
+      type="number"
+      class="form-control"
+      id="priceInput"
+      placeholder="Enter Price"
+      value="8000"
+    />
+    <small id="priceHelp" class="form-text text-muted">Product Price in PKR</small>
+  </div>
+
+  <div class="form-group">
+    <label for="createdAtInput">Created At</label>
+    <input
+      name="createdAt"
+      type="datetime-local"
+      class="form-control"
+      id="createdAtInput"
+      value="<%= new Date().toISOString().slice(0, 16) %>"
+    />
+    <small id="createdAtHelp" class="form-text text-muted">Product Creation Date</small>
+  </div>
+
+  <div class="form-group">
+    <button class="btn btn-info">Create New Product</button>
+  </div>
 </form>

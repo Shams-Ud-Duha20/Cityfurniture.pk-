@@ -1,0 +1,42 @@
+
+
+<h4>My Featured Products</h4>
+<div class="row">
+    <% for( let index = 0; index < pds.length; index++ ) { %>
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <img src="/images/placeholder.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><%= pds[index].title %></h5>
+                    <p class="card-text"><%=pds[index].description %></p>
+                    <!-- <a href="#" class="btn btn-primary">PKR: <%=pds[index].price %> Add To Cart</a> -->
+                    <a href="/add-to-cart/<%= pds[index]._id %>" class="btn btn-primary">PKR: <%=pds[index].price %> Add To Cart</a>
+                </div>
+            </div>
+        </div>
+    <% } %>
+</div>
+
+<div>
+    Page <%= page %> of <%= totalPages %>
+</div>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <!-- "Previous" Button -->
+            <li class="page-item <%= page == 1 ? "disabled" : "" %>">
+                <a class="page-link" href="/admin/products/<%= Number(page) - 1 %>">Previous</a>
+            </li>
+        
+            <!-- Page Number Links -->
+            <% for (let index = 1; index <= totalPages; index++) { %>
+                <li class="page-item">
+                    <a class="page-link" href="/admin/<%= index %>"><%= index %></a>
+                </li>
+            <% } %>
+        
+            <!-- "Next" Button -->
+            <li class="page-item <%= page == totalPages ? "disabled" : "" %>">
+                <a class="page-link" href="/admin/<%= Number(page) + 1 %>">Next</a>
+            </li>
+        </ul>
+    </nav>

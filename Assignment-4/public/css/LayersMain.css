@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.uni_color{
+    color: #B09C6D;
+}
+
+.uni_Bg_color{
+    background-color: #B09C6D;
+}
+
+.Layer-Font{
+    font-family: Berkshire Swash;
+}
+
+
+.ON_Hover:hover{
+    color: #B09C6D;
+}
+
+#header{
+    background-color: #f9f9f9;
+    z-index: 1;
+}
+
+button.button_Loc{
+    background-color: #B09C6D;
+}
+
+img.icon{
+    width: 20px;
+}
+
+ul.dropdown-menu:hover{
+    display: inline-block;
+}
+
+img.cake-icon{
+    background-color: #B09C6D;
+}
+
+div.SEC_2{
+    background-color: rgb(236, 240, 241);
+}
+
+div.SectionShadow{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+div.Delivery{
+    background-color: #FFF7F7;
+}
+
+div.img-div img{
+    width: 100%;
+    height: 90px;
+    object-fit: fill;
+}
+
+h1.customer-bg{
+    background-color: #EEF7FF;
+}
+
+.animation_right {
+    animation: 2s slide-right;
+}
+    @keyframes slide-right {
+    from {
+        margin-left: -100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+
+div.footer{
+    background-image: url('/images/WavesBack2.jpg');
+    width: 100%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

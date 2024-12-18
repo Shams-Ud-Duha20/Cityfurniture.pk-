@@ -1,0 +1,139 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.Delivery{
+    background-color: #FFF7F7;
+}
+
+div.img-div img{
+    width: 100%;
+    height: 90px;
+    object-fit: fill;
+}
+
+.animation_right {
+    animation: 2s slide-right;
+}
+    @keyframes slide-right {
+    from {
+        margin-left: -100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+
+
+/*
+
+div.DeliverySection{
+    border-bottom: 2px solid brown;
+    height: 91vh;
+    background-color: #FFF7F7;
+}
+
+
+div.DeliverySection div.upper-back img{
+    width: 100%;
+    height: 100px;  
+    object-fit: fill;
+}
+
+div.DeliverySection div.delivery-content{
+    float: left;
+    width: 45%;
+    margin: 20px 0 0 0;
+    padding: 20px 0 0 0;
+}
+
+div.DeliverySection div.delivery-content p{
+    color: #777777;
+    font-size: larger;
+    padding: 0 0 0 150px;
+}
+
+div.delivery-content h1{
+    font-weight: 700;
+    padding: 0 0 0 150px;
+    font-family: Alegreya;
+}
+
+div.DeliverySection div.delivery-content p.delivery-2-p{
+    color: #777777;
+    font-size: larger;
+    width: 80%;
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+
+div.delivery-app{
+    margin: 90px 0 0 0;
+    padding-left: 40px;
+}
+
+a.delivery-app-link img{
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+div.delivery-content h1.h1-2nd{
+    padding-left: 40px;
+    margin: 0;
+}
+
+div.delivery-icon{
+    width: 55%;
+    float: right;
+    margin: 20px 0 0 0;
+}
+
+div.delivery-icon div.delivery-pic{
+    width: 60%;
+    float: left;
+}
+
+div.DeliverySection div.lower-back img{
+    width: 100%;
+    height: 100px;  
+    object-fit: fill;
+}
+
+h1.customer-h2{
+    font-family: Alegreya;
+    text-align: center;
+}
+
+div.customers{
+    background-image: url(./IconsImages/CustomerSection.png);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+div.footer{
+    background-image: url(./IconsImages/WavesBack.png);
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+div.footer div.footer-content{
+    position: absolute;
+    bottom: 70px;
+    left: 35%;
+    text-align: center;
+}
+
+div.footer-content a.Social-icons{
+    padding: 2px 0 0 5px;
+    text-decoration: none;
+} */

@@ -1,0 +1,26 @@
+    <h3><%- Heading %></h3>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>username</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(let index = 0; index < users.length; index++) { %>
+                <tr>
+                    <td><%= users[index]._id %></td>
+                    <td><%= users[index].username %></td>
+                    <td><%= users[index].email %></td>
+                    <td>
+                        <a href="/admin/users/edit" class="btn btn-warning">Edit</a>
+                        <a href="/admin/users/delete" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+
+            <% } %>
+        </tbody>
+    </table>

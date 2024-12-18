@@ -1,0 +1,52 @@
+<h3><%- Heading %></h3>
+
+<!-- Search and Sort Form -->
+<form method="GET" action="/admin/products" class="mb-4">
+    <div class="row">
+        <div class="col-md-4">
+            <input
+                type="text"
+                name="search"
+                class="form-control"
+                placeholder="Search by title"
+                value="<%= search %>"
+            />
+        </div>
+        <div class="col-md-4">
+            <select name="sort" class="form-select">
+                <option value="asc" <%= sort === "asc" ? "selected" : "" %>>Price: Low to High</option>
+                <option value="desc" <%= sort === "desc" ? "selected" : "" %>>Price: High to Low</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <button type="submit" class="btn btn-primary">Filter</button>
+            <a href="/admin/products" class="btn btn-secondary">Reset</a>
+        </div>
+    </div>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for (let index = 0; index < products.length; index++) { %>
+            <tr>
+                <td><%= products[index]._id %></td>
+                <td><%= products[index].title %></td>
+                <td>PKR <%= products[index].price %></td>
+                <td><%= products[index].description %></td>
+                <td>
+                    <a href="/admin/products/edit/<%= products[index]._id %>" class="btn btn-warning">Edit</a>
+                    <a href="/admin/products/delete/<%= products[index]._id %>" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        <% } %>
+    </tbody>
+</table>
